@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background-image: url(retyy.jpg);
+		background-size: cover;
+		background-position: absolute;
+	}
+	.teks{
+		font-size: 18px;
+		font-family: arial;
+		color: white;
+		text-align: center;
+	}
+	h1{
+		color: white;
+    	background: linear-gradient(to bottom, #33ccff 0%, #333399 100%);
+	}
+
+	</style>
+</head>
+<body>
+	<div class="teks">
+		<form>
+			<h1 style="font-family:arial; font-size=100px;">DAFTARKAN DIRI ANDA</h1>
+			<form action="/action_page.php" autocomplete="on">
+				Nama Lengkap :<br>
+				<input type:"text" name="fullname" style="width:180px; height:20px;"><br>
+				Email :<br>
+				<input type="email" name="email" autocomplete="off" style="width:180px; height:20px;"><br>
+				<input type="hidden" name="action" autocomplete="users/setpassword">
+				<input type="hidden" name="code" autocomplete="{{ code }}">
+				<input type="hidden" name="id" autocomplete="{{ id }}">
+				<label for="newpassword" >Password</label><br>
+				<input id="newpassword" type="password" name="newpassword" style="width:180px; height:20px;"><br>
+				<label for="newpassword">Konfirmasi Password</label><br>
+				<input id="newpassword" type="password" name="confirmpassword" style="width:180px; height:20px;"><br>
+				Jenis Kelamin :<br>
+				<select name="jeniskelamin" style="width:180px; height:20px;"><br>
+					<option value="pria">Laki - laki</option>
+					<option value="wanita">Perempuan</option></select><br>
+				Alamat :<br>
+				<textarea name="message" style="width:180px; height:60px;"></textarea>
+				<br>
+				Nomor Telepon :<br>
+				<input type="text" name="nohp" style="width:180px; height:20px;"><br><br>
+				<input type="submit" value="Register"> &emsp;
+				<input type="reset" value="Batal"><br>
+			</form>
+		</form>
+		<div class="tulisan">
+</body>
+</html>
